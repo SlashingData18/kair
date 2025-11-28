@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kair"
+version = "0.1.0"
+description = "KAIR — training and testing codes for various image restoration models (USRNet, DnCNN, FFDNet, SRMD, DPSR, MSRResNet, ESRGAN, BSRGAN, SwinIR, VRT, RVRT)"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [ { name = "Kai Zhang" } ]
+requires-python = ">=3.7"
+keywords = ["image-restoration", "super-resolution", "denoising", "computer-vision", "deep-learning"]
+
+dependencies = [
+  "opencv-python",
+  "scikit-image",
+  "pillow",
+  "torchvision",
+  "hdf5storage",
+  "ninja",
+  "lmdb",
+  "requests",
+  "timm",
+  "einops",
+  
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cszn/KAIR"
+"Source" = "https://github.com/cszn/KAIR"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
