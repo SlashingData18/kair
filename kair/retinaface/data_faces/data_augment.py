@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import random
-from utils_faces.box_utils import matrix_iof
+from kair.retinaface.utils_faces.box_utils import matrix_iof
 
 
 def _crop(image, boxes, labels, landm, img_dim):

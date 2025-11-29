@@ -5,9 +5,9 @@ import torchvision.models._utils as _utils
 import torch.nn.functional as F
 from collections import OrderedDict
 
-from facemodels.net import MobileNetV1 as MobileNetV1
-from facemodels.net import FPN as FPN
-from facemodels.net import SSH as SSH
+from kair.retinaface.facemodels.net import MobileNetV1 as MobileNetV1
+from kair.retinaface.facemodels.net import FPN as FPN
+from kair.retinaface.facemodels.net import SSH as SSH
 
 
 

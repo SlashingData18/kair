@@ -6,7 +6,7 @@ from multiprocessing import Pool
 from os import path as osp
 from tqdm import tqdm
 
-from utils.utils_video import scandir
+from kair.utils.utils_video import scandir
 
 def main():
     """A multi-thread tool to crop large images to sub-images for faster IO.
