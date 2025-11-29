@@ -10,12 +10,12 @@ import torch
 from torch.utils.data import DataLoader
 
 
-from utils import utils_logger
-from utils import utils_image as util
-from utils import utils_option as option
+from kair.utils import utils_logger
+from kair.utils import utils_image as util
+from kair.utils import utils_option as option
 
-from data.select_dataset import define_Dataset
-from models.select_model import define_Model
+from kair.data.select_dataset import define_Dataset
+from kair.models.select_model import define_Model
 
 
 '''

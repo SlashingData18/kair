@@ -8,17 +8,17 @@ import numpy as np
 from datetime import datetime
 from collections import OrderedDict
 from scipy.io import loadmat
-#import hdf5storage
+import hdf5storage
 from scipy import ndimage
 from scipy.signal import convolve2d
 
 import torch
 
-from utils import utils_deblur
-from utils import utils_logger
-from utils import utils_sisr as sr
-from utils import utils_image as util
-from models.network_usrnet import USRNet as net
+from kair.utils import utils_deblur
+from kair.utils import utils_logger
+from kair.utils import utils_sisr as sr
+from kair.utils import utils_image as util
+from kair.models.network_usrnet import USRNet as net
 
 
 '''

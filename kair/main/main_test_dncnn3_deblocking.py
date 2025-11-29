@@ -7,9 +7,9 @@ from collections import OrderedDict
 
 import torch
 
-from utils import utils_logger
-from utils import utils_model
-from utils import utils_image as util
+from kair.utils import utils_logger
+from kair.utils import utils_model
+from kair.utils import utils_image as util
 #import os
 #os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 

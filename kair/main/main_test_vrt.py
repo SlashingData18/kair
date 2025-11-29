@@ -15,9 +15,9 @@ from os import path as osp
 from collections import OrderedDict
 from torch.utils.data import DataLoader
 
-from models.network_vrt import VRT as net
-from utils import utils_image as util
-from data.dataset_video_test import VideoRecurrentTestDataset, VideoTestVimeo90KDataset, \
+from kair.models.network_vrt import VRT as net
+from kair.utils import utils_image as util
+from kair.data.dataset_video_test import VideoRecurrentTestDataset, VideoTestVimeo90KDataset, \
     SingleVideoRecurrentTestDataset, VFI_DAVIS, VFI_UCF101, VFI_Vid4
 
 

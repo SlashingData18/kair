@@ -38,11 +38,11 @@ import glob
 import numpy as np
 import torch
 
-from utils.utils_alignfaces import warp_and_crop_face, get_reference_facial_points
-from utils import utils_image as util 
+from kair.utils.utils_alignfaces import warp_and_crop_face, get_reference_facial_points
+from kair.utils import utils_image as util 
 
-from retinaface.retinaface_detection import RetinaFaceDetection
-from models.network_faceenhancer import FullGenerator as enhancer_net
+from kair.retinaface.retinaface_detection import RetinaFaceDetection
+from kair.models.network_faceenhancer import FullGenerator as enhancer_net
 
 
 class faceenhancer(object):

@@ -8,11 +8,11 @@ from scipy.io import loadmat
 
 import torch
 
-from utils import utils_deblur
-from utils import utils_sisr as sr
-from utils import utils_logger
-from utils import utils_image as util
-from utils import utils_model
+from kair.utils import utils_deblur
+from kair.utils import utils_sisr as sr
+from kair.utils import utils_logger
+from kair.utils import utils_image as util
+from kair.utils import utils_model
 
 
 '''

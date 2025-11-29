@@ -7,8 +7,8 @@ import os
 import torch
 import requests
 
-from models.network_swinir import SwinIR as net
-from utils import utils_image as util
+from kair.models.network_swinir import SwinIR as net
+from kair.utils import utils_image as util
 
 
 def main():
