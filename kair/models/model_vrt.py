@@ -4,13 +4,13 @@ import torch.nn as nn
 from torch.optim import lr_scheduler
 from torch.optim import Adam
 
-from models.select_network import define_G
-from models.model_plain import ModelPlain
-from models.loss import CharbonnierLoss
-from models.loss_ssim import SSIMLoss
+from kair.models.select_network import define_G
+from kair.models.model_plain import ModelPlain
+from kair.models.loss import CharbonnierLoss
+from kair.models.loss_ssim import SSIMLoss
 
-from utils.utils_model import test_mode
-from utils.utils_regularizers import regularizer_orth, regularizer_clip
+from kair.utils.utils_model import test_mode
+from kair.utils.utils_regularizers import regularizer_orth, regularizer_clip
 
 
 class ModelVRT(ModelPlain):

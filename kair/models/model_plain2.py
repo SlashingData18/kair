@@ -1,4 +1,4 @@
-from models.model_plain import ModelPlain
+from kair.models.model_plain import ModelPlain
 
 class ModelPlain2(ModelPlain):
     """Train with two inputs (L, C) and with pixel loss"""

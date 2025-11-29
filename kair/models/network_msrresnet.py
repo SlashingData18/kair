@@ -1,6 +1,6 @@
 import math
 import torch.nn as nn
-import models.basicblock as B
+import kair.models.basicblock as B
 import functools
 import torch.nn.functional as F
 import torch.nn.init as init

@@ -5,7 +5,6 @@ from typing import Dict, List, Optional, Union
 
 import requests
 
-
 class ModelDownloader:
     """
     Object-oriented model downloader for pretrained image processing models.

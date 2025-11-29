@@ -4,10 +4,10 @@ import torch.nn as nn
 from torch.optim import lr_scheduler
 from torch.optim import Adam
 
-from models.select_network import define_G, define_D
-from models.model_base import ModelBase
-from models.loss import GANLoss, PerceptualLoss
-from models.loss_ssim import SSIMLoss
+from kair.models.select_network import define_G, define_D
+from kair.models.model_base import ModelBase
+from kair.models.loss import GANLoss, PerceptualLoss
+from kair.models.loss_ssim import SSIMLoss
 
 
 class ModelGAN(ModelBase):

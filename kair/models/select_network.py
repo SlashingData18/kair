@@ -26,7 +26,7 @@ def define_G(opt):
     # DnCNN
     # ----------------------------------------
     if net_type == 'dncnn':
-        from models.network_dncnn import DnCNN as net
+        from kair.models.network_dncnn import DnCNN as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -37,7 +37,7 @@ def define_G(opt):
     # Flexible DnCNN
     # ----------------------------------------
     elif net_type == 'fdncnn':
-        from models.network_dncnn import FDnCNN as net
+        from kair.models.network_dncnn import FDnCNN as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -48,7 +48,7 @@ def define_G(opt):
     # FFDNet
     # ----------------------------------------
     elif net_type == 'ffdnet':
-        from models.network_ffdnet import FFDNet as net
+        from kair.models.network_ffdnet import FFDNet as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -67,7 +67,7 @@ def define_G(opt):
     # SRMD
     # ----------------------------------------
     elif net_type == 'srmd':
-        from models.network_srmd import SRMD as net
+        from kair.models.network_srmd import SRMD as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -80,7 +80,7 @@ def define_G(opt):
     # super-resolver prior of DPSR
     # ----------------------------------------
     elif net_type == 'dpsr':
-        from models.network_dpsr import MSRResNet_prior as net
+        from kair.models.network_dpsr import MSRResNet_prior as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -93,7 +93,7 @@ def define_G(opt):
     # modified SRResNet v0.0
     # ----------------------------------------
     elif net_type == 'msrresnet0':
-        from models.network_msrresnet import MSRResNet0 as net
+        from kair.models.network_msrresnet import MSRResNet0 as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -106,7 +106,7 @@ def define_G(opt):
     # modified SRResNet v0.1
     # ----------------------------------------
     elif net_type == 'msrresnet1':
-        from models.network_msrresnet import MSRResNet1 as net
+        from kair.models.network_msrresnet import MSRResNet1 as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -119,7 +119,7 @@ def define_G(opt):
     # RRDB
     # ----------------------------------------
     elif net_type == 'rrdb':  # RRDB
-        from models.network_rrdb import RRDB as net
+        from kair.models.network_rrdb import RRDB as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -133,7 +133,7 @@ def define_G(opt):
     # RRDBNet
     # ----------------------------------------
     elif net_type == 'rrdbnet':  # RRDBNet
-        from models.network_rrdbnet import RRDBNet as net
+        from kair.models.network_rrdbnet import RRDBNet as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nf=opt_net['nf'],
@@ -145,7 +145,7 @@ def define_G(opt):
     # IMDB
     # ----------------------------------------
     elif net_type == 'imdn':  # IMDB
-        from models.network_imdn import IMDN as net
+        from kair.models.network_imdn import IMDN as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -158,7 +158,7 @@ def define_G(opt):
     # USRNet
     # ----------------------------------------
     elif net_type == 'usrnet':  # USRNet
-        from models.network_usrnet import USRNet as net
+        from kair.models.network_usrnet import USRNet as net
         netG = net(n_iter=opt_net['n_iter'],
                    h_nc=opt_net['h_nc'],
                    in_nc=opt_net['in_nc'],
@@ -174,7 +174,7 @@ def define_G(opt):
     # Deep Residual U-Net (drunet)
     # ----------------------------------------
     elif net_type == 'drunet':
-        from models.network_unet import UNetRes as net
+        from kair.models.network_unet import UNetRes as net
         netG = net(in_nc=opt_net['in_nc'],
                    out_nc=opt_net['out_nc'],
                    nc=opt_net['nc'],
@@ -188,7 +188,7 @@ def define_G(opt):
     # SwinIR
     # ----------------------------------------
     elif net_type == 'swinir':
-        from models.network_swinir import SwinIR as net
+        from kair.models.network_swinir import SwinIR as net
         netG = net(upscale=opt_net['upscale'],
                    in_chans=opt_net['in_chans'],
                    img_size=opt_net['img_size'],
@@ -205,7 +205,7 @@ def define_G(opt):
     # VRT
     # ----------------------------------------
     elif net_type == 'vrt':
-        from models.network_vrt import VRT as net
+        from kair.models.network_vrt import VRT as net
         netG = net(upscale=opt_net['upscale'],
                    img_size=opt_net['img_size'],
                    window_size=opt_net['window_size'],
@@ -226,7 +226,7 @@ def define_G(opt):
         # RVRT
         # ----------------------------------------
     elif net_type == 'rvrt':
-        from models.network_rvrt import RVRT as net
+        from kair.models.network_rvrt import RVRT as net
         netG = net(upscale=opt_net['upscale'],
                    clip_size=opt_net['clip_size'],
                    img_size=opt_net['img_size'],
@@ -278,7 +278,7 @@ def define_D(opt):
     # discriminator_vgg_96
     # ----------------------------------------
     if net_type == 'discriminator_vgg_96':
-        from models.network_discriminator import Discriminator_VGG_96 as discriminator
+        from kair.models.network_discriminator import Discriminator_VGG_96 as discriminator
         netD = discriminator(in_nc=opt_net['in_nc'],
                              base_nc=opt_net['base_nc'],
                              ac_type=opt_net['act_mode'])
@@ -287,7 +287,7 @@ def define_D(opt):
     # discriminator_vgg_128
     # ----------------------------------------
     elif net_type == 'discriminator_vgg_128':
-        from models.network_discriminator import Discriminator_VGG_128 as discriminator
+        from kair.models.network_discriminator import Discriminator_VGG_128 as discriminator
         netD = discriminator(in_nc=opt_net['in_nc'],
                              base_nc=opt_net['base_nc'],
                              ac_type=opt_net['act_mode'])
@@ -296,7 +296,7 @@ def define_D(opt):
     # discriminator_vgg_192
     # ----------------------------------------
     elif net_type == 'discriminator_vgg_192':
-        from models.network_discriminator import Discriminator_VGG_192 as discriminator
+        from kair.models.network_discriminator import Discriminator_VGG_192 as discriminator
         netD = discriminator(in_nc=opt_net['in_nc'],
                              base_nc=opt_net['base_nc'],
                              ac_type=opt_net['act_mode'])
@@ -305,18 +305,18 @@ def define_D(opt):
     # discriminator_vgg_128_SN
     # ----------------------------------------
     elif net_type == 'discriminator_vgg_128_SN':
-        from models.network_discriminator import Discriminator_VGG_128_SN as discriminator
+        from kair.models.network_discriminator import Discriminator_VGG_128_SN as discriminator
         netD = discriminator()
 
     elif net_type == 'discriminator_patchgan':
-        from models.network_discriminator import Discriminator_PatchGAN as discriminator
+        from kair.models.network_discriminator import Discriminator_PatchGAN as discriminator
         netD = discriminator(input_nc=opt_net['in_nc'],
                              ndf=opt_net['base_nc'],
                              n_layers=opt_net['n_layers'],
                              norm_type=opt_net['norm_type'])
 
     elif net_type == 'discriminator_unet':
-        from models.network_discriminator import Discriminator_UNet as discriminator
+        from kair.models.network_discriminator import Discriminator_UNet as discriminator
         netD = discriminator(input_nc=opt_net['in_nc'],
                              ndf=opt_net['base_nc'])
 
@@ -339,7 +339,7 @@ def define_D(opt):
 # --------------------------------------------
 def define_F(opt, use_bn=False):
     device = torch.device('cuda' if opt['gpu_ids'] else 'cpu')
-    from models.network_feature import VGGFeatureExtractor
+    from kair.models.network_feature import VGGFeatureExtractor
     # pytorch pretrained VGG19-54, before ReLU.
     if use_bn:
         feature_layer = 49

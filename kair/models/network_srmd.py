@@ -1,6 +1,6 @@
 
 import torch.nn as nn
-import models.basicblock as B
+import kair.models.basicblock as B
 import torch
 
 """

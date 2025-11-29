@@ -1,4 +1,4 @@
-from models.model_plain import ModelPlain
+from kair.models.model_plain import ModelPlain
 import numpy as np
 
 

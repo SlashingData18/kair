@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from torch.nn.utils import spectral_norm
-import models.basicblock as B
+import kair.models.basicblock as B
 import functools
 import numpy as np
 
