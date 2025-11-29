@@ -7,7 +7,7 @@ import sys
 op_path = 'models'
 if op_path not in sys.path:
 	  sys.path.insert(0, op_path)
-from op import FusedLeakyReLU, fused_leaky_relu, upfirdn2d
+from kair.models.op import FusedLeakyReLU, fused_leaky_relu, upfirdn2d
 
 import math
 import random

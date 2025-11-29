@@ -18,7 +18,7 @@ from functools import reduce, lru_cache
 from operator import mul
 from einops import rearrange
 from einops.layers.torch import Rearrange
-from .op.deform_attn import deform_attn, DeformAttnPack
+from kair.models.op.deform_attn import deform_attn, DeformAttnPack
 
 
 def flow_warp(x, flow, interp_mode='bilinear', padding_mode='zeros', align_corners=True):
