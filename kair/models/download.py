@@ -22,25 +22,60 @@ class ModelDownloader:
         """Load the predefined model zoo configuration."""
         return {
             "DnCNN": [
-                "dncnn_15.pth", "dncnn_25.pth", "dncnn_50.pth", "dncnn3.pth",
-                "dncnn_color_blind.pth", "dncnn_gray_blind.pth"
+                "dncnn_15.pth", 
+                "dncnn_25.pth", 
+                "dncnn_50.pth", 
+                "dncnn3.pth",
+                "dncnn_color_blind.pth", 
+                "dncnn_gray_blind.pth"
+            ],
+            "FDnCNN": [
+                "fdncnn_color.pth", 
+                "fdncnn_gray.pth",
+                "fdncnn_color_clip.pth", 
+                "fdncnn_gray_clip.pth"
             ],
             "SRMD": [
-                "srmdnf_x2.pth", "srmdnf_x3.pth", "srmdnf_x4.pth",
-                "srmd_x2.pth", "srmd_x3.pth", "srmd_x4.pth"
+                "srmdnf_x2.pth", 
+                "srmdnf_x3.pth", 
+                "srmdnf_x4.pth",
+                "srmd_x2.pth", 
+                "srmd_x3.pth", 
+                "srmd_x4.pth"
             ],
-            "DPSR": ["dpsr_x2.pth", "dpsr_x3.pth", "dpsr_x4.pth", "dpsr_x4_gan.pth"],
+            "DPSR": [
+                "dpsr_x2.pth", 
+                "dpsr_x3.pth", 
+                "dpsr_x4.pth", 
+                "dpsr_x4_gan.pth"
+            ],
             "FFDNet": [
-                "ffdnet_color.pth", "ffdnet_gray.pth",
-                "ffdnet_color_clip.pth", "ffdnet_gray_clip.pth"
+                "ffdnet_color.pth", 
+                "ffdnet_gray.pth",
+                "ffdnet_color_clip.pth", 
+                "ffdnet_gray_clip.pth"
             ],
-            "USRNet": ["usrgan.pth", "usrgan_tiny.pth", "usrnet.pth", "usrnet_tiny.pth"],
+            "USRNet": [
+                "usrgan.pth", 
+                "usrgan_tiny.pth", 
+                "usrnet.pth", 
+                "usrnet_tiny.pth"
+            ],
             "DPIR": [
-                "drunet_gray.pth", "drunet_color.pth",
-                "drunet_deblocking_color.pth", "drunet_deblocking_grayscale.pth"
+                "drunet_gray.pth", 
+                "drunet_color.pth",
+                "drunet_deblocking_color.pth", 
+                "drunet_deblocking_grayscale.pth"
             ],
-            "BSRGAN": ["BSRGAN.pth", "BSRNet.pth", "BSRGANx2.pth"],
-            "IRCNN": ["ircnn_color.pth", "ircnn_gray.pth"],
+            "BSRGAN": [
+                "BSRGAN.pth", 
+                "BSRNet.pth", 
+                "BSRGANx2.pth"
+            ],
+            "IRCNN": [
+                "ircnn_color.pth", 
+                "ircnn_gray.pth"
+            ],
             "SwinIR": [
                 "001_classicalSR_DF2K_s64w8_SwinIR-M_x2.pth",
                 "001_classicalSR_DF2K_s64w8_SwinIR-M_x3.pth",
@@ -64,7 +99,7 @@ class ModelDownloader:
                 "006_CAR_DFWB_s126w7_SwinIR-M_jpeg10.pth",
                 "006_CAR_DFWB_s126w7_SwinIR-M_jpeg20.pth",
                 "006_CAR_DFWB_s126w7_SwinIR-M_jpeg30.pth",
-                "006_CAR_DFWB_s126w7_SwinIR-M_jpeg40.pth",
+                "006_CAR_DFWB_s126w7_SwinIR-M_jpeg40.pth"
             ],
             "VRT": [
                 "001_VRT_videosr_bi_REDS_6frames.pth",
@@ -75,7 +110,7 @@ class ModelDownloader:
                 "006_VRT_videodeblurring_GoPro.pth",
                 "007_VRT_videodeblurring_REDS.pth",
                 "008_VRT_videodenoising_DAVIS.pth",
-                "009_VRT_videofi_Vimeo_4frames.pth",
+                "009_VRT_videofi_Vimeo_4frames.pth"
             ],
             "RVRT": [
                 "001_RVRT_videosr_bi_REDS_30frames.pth",
@@ -83,13 +118,29 @@ class ModelDownloader:
                 "003_RVRT_videosr_bd_Vimeo_14frames.pth",
                 "004_RVRT_videodeblurring_DVD_16frames.pth",
                 "005_RVRT_videodeblurring_GoPro_16frames.pth",
-                "006_RVRT_videodenoising_DAVIS_16frames.pth",
+                "006_RVRT_videodenoising_DAVIS_16frames.pth"
+            ],
+            "SCUNET": [
+                "scunet_color_15.pth", 
+                "scunet_gray_15.pth",
+                "scunet_color_25.pth", 
+                "scunet_gray_25.pth",
+                "scunet_color_50.pth", 
+                "scunet_gray_50.pth",
+                "scunet_color_real_gan.pth",
+                "scunet_color_real_psnr.pth"
             ],
             "others": [
-                "msrresnet_x4_psnr.pth", "msrresnet_x4_gan.pth", "imdn_x4.pth",
-                "RRDB.pth", "ESRGAN.pth", "FSSR_DPED.pth", "FSSR_JPEG.pth",
-                "RealSR_DPED.pth", "RealSR_JPEG.pth",
-            ],
+                "msrresnet_x4_psnr.pth", 
+                "msrresnet_x4_gan.pth", 
+                "imdn_x4.pth",
+                "RRDB.pth", 
+                "ESRGAN.pth", 
+                "FSSR_DPED.pth", 
+                "FSSR_JPEG.pth",
+                "RealSR_DPED.pth", 
+                "RealSR_JPEG.pth"
+            ]
         }
 
     def _get_download_url(self, model_name: str) -> str:
