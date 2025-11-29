@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kair"
-version = "0.1.0"
+version = "1.1.1"
 description = "KAIR — training and testing codes for various image restoration models (USRNet, DnCNN, FFDNet, SRMD, DPSR, MSRResNet, ESRGAN, BSRGAN, SwinIR, VRT, RVRT)"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -22,7 +22,8 @@ dependencies = [
   "lmdb",
   "requests",
   "timm",
-  "einops"
+  "einops",
+  
 ]
 
 classifiers = [
