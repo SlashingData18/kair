@@ -499,7 +499,7 @@ def add_video_compression(imgs):
 
 
 if __name__ == '__main__':
-
+    pass
     # -----------------------------------
     # test VideoReader(filename, cache_capacity=10)
     # -----------------------------------
@@ -547,4 +547,4 @@ if __name__ == '__main__':
 #        util.imshow(util.single2uint(img))
 #        util.imsave(util.single2uint(img),f'{i:05}.png')
 
-    # run utils/utils_video.py
+    ## run utils/utils_video.py

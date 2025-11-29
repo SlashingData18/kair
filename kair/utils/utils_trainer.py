@@ -8,13 +8,13 @@ import torch
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 
-from . import utils_logger
-from . import utils_image as util
-from . import utils_option as option
-from .utils_dist import get_dist_info, init_dist
+from kair.utils import utils_logger
+from kair.utils import utils_image as util
+from kair.utils import utils_option as option
+from kair.utils.utils_dist import get_dist_info, init_dist
 
-from data.select_dataset import define_Dataset
-from models.select_model import define_Model
+from kair.data.select_dataset import define_Dataset
+from kair.models.select_model import define_Model
 
 
 def _find_and_set_checkpoints(opt, net_types):

@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import torch
 
-from utils import utils_image as util
+from kair.utils import utils_image as util
 
 import random
 from scipy import ndimage
