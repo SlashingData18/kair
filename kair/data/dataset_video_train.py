@@ -5,7 +5,7 @@ from pathlib import Path
 import torch.utils.data as data
 from torchvision import transforms
 
-import utils.utils_video as utils_video
+import kair.utils.utils_video as utils_video
 
 
 class VideoRecurrentTrainDataset(data.Dataset):

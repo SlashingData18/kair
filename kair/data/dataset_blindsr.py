@@ -1,9 +1,9 @@
 import random
 import numpy as np
 import torch.utils.data as data
-import utils.utils_image as util
+import kair.utils.utils_image as util
 import os
-from utils import utils_blindsr as blindsr
+from kair.utils import utils_blindsr as blindsr
 
 
 class DatasetBlindSR(data.Dataset):

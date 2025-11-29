@@ -1,7 +1,7 @@
 import random
 import numpy as np
 import torch.utils.data as data
-import utils.utils_image as util
+import kair.utils.utils_image as util
 
 
 class DatasetPlain(data.Dataset):

@@ -2,8 +2,8 @@ import random
 import numpy as np
 import torch
 import torch.utils.data as data
-import utils.utils_image as util
-from utils import utils_sisr
+import kair.utils.utils_image as util
+from kair.utils import utils_sisr
 
 
 import hdf5storage
